@@ -1,5 +1,6 @@
-import { Avatar, Box, Stack, VStack,Text } from '@chakra-ui/react'
+import { Box, Stack, VStack,Text, Image, } from '@chakra-ui/react'
 import React from 'react'
+import img1 from '../assets/img1.jpg'
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
                 <Text fontWeight={'bold'}>About Us</Text>
                 <Text fontSize={'sm'} letterSpacing={'widest'} textAlign={['center' , 'end']}>We are the best crypto trading app in India, We provide our guidance at a very cheap price.</Text>
             </VStack>
-            <VStack>
-                <Avatar boxSize={'28'} mt={['4' , '0']}/>
-                <Text >Our Founder</Text>
+            <VStack  w={'64'}>
+                <Image boxSize={'28'} mt={['4' , '0']} src={img1} rounded={'full'}/>
+                <Text  w={'full'} textAlign={'center'} color={'Highlight'}>Bhojraj Choudhary</Text>
             </VStack>
         </Stack>
     </Box>
